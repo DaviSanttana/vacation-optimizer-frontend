@@ -11,7 +11,7 @@ function App() {
 
   const handleCalculate = async () => {
     setLoading(true)
-    const response = await fetch('http://localhost:8080/api/vacations', {
+    const response = await fetch('https://vacation-optimizer-backend-production.up.railway.app/api/vacations', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ 
